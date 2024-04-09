@@ -8,6 +8,7 @@
 
 .heroes li {
   display: flex;
+  flex-direction: column;
 }
 
 .heroes button {
@@ -21,7 +22,12 @@
   border-radius: 4px;
   display: flex;
   align-items: stretch;
-  height: 1.8em;
+  min-height: 32px;
+}
+
+.heroes div {
+  margin-left: 15px;
+  margin-bottom: 15px;
 }
 
 .heroes button:hover {
