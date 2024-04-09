@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
 import { HEROES } from '../mock-heroes';
+import { Hero } from '../hero';
 
 @Component({
     selector: 'app-heroes',
@@ -13,4 +14,9 @@ import { HEROES } from '../mock-heroes';
 })
 export class HeroesComponent {
     heroes = HEROES;
+    selectedHero?: Hero;
+
+    onSelect(hero: Hero) {
+      this.selectedHero = hero;
+    }
 }
